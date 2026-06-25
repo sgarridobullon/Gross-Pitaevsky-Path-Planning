@@ -1,2 +1,10 @@
 # Gross-Pitaevsky-Path-Planning
-Gross-Pitaevsky Path Planning
+
+This study addresses a critical and long-standing challenge in autonomous multi-agent systems: navigating swarms through highly cluttered, non-convex environments without getting trapped by the local minima dead-ends that routinely fail traditional potential field planners.
+To resolve this, we present a novel, decentralized swarm navigation framework inspired by quantum fluid mechanics, utilizing the hydrodynamic formulation of the time-dependent Gross-Pitaevskii Equation (GPE). By mapping a multi-agent robotic swarm to the macroscopic wave evolution of a self-interacting quantum fluid, complex physical obstacles are modeled as steep energy barriers while moving targets act as attractive valleys.
+The core contributions and innovative features of this work include:
+•	Vortex-Driven Local Minima Escape: We leverage the interaction between the moving fluid and sharp obstacle boundaries to trigger the formation of quantized vortices. These topological vortices generate circulating vector fields that naturally steer trapped drones out of deep concave enclosures without requiring heuristic re-planning or state machines.
+•	Inherent Congestion Control: The internal physics of the GPE introduces a repulsive self-interaction term. This creates an inherent fluidic pressure that automatically and dynamically distributes agents to prevent collisions and crowding.
+•	Extreme Scalability: Because the environment's wave evolution is decoupled from individual agent counts, the framework scales efficiently with the swarm population, rendering it highly viable for real-time, large-scale multi-agent operations.
+We believe this manuscript is an excellent fit for Robotica, as it introduces a highly interdisciplinary paradigm shift—bridging quantum fluid mechanics and robotic motion planning—to advance the fields of behavioral swarm robotics, autonomous navigation, and decentralized control. Our high-fidelity numerical simulations demonstrate that this architecture successfully navigates complex, asymmetric layouts where classical Artificial Potential Field (APF) methods stall.
+<img width="468" height="439" alt="image" src="https://github.com/user-attachments/assets/286d3f8f-70c2-48e4-a3f8-87feb7b858da" />
